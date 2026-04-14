@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { inventory, purchaseOrders } from "../data/staticData";
-import { StatCard, Panel, Table, Td, StatusBadge, Toast, Btn } from "../components/UI";
+import { StatCard, Panel, Table, Td, StatusBadge, Toast } from "../components/UI";
 
 const SupplyChain = () => {
   const [toast, setToast] = useState("");

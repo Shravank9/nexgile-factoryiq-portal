@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useUser } from "../context/UserContext";
 import { programs as initialPrograms } from "../data/staticData";
-import { StatusBadge, Panel, Btn, SearchBar, FilterTabs, ProgressBar, Toast, Modal, Input, Select, EmptyState } from "../components/UI";
+import { StatusBadge,  Btn, SearchBar, FilterTabs, ProgressBar, Toast, Modal, Input, Select, EmptyState } from "../components/UI";
 
 const CUSTOMER_PROGRAMS = ["PRG-002"];
 

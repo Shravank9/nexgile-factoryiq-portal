@@ -78,8 +78,6 @@ const Quality = () => {
     showToast(`${id} updated to "${status}"`);
   };
 
-  const sevColor = { Major: "red", Minor: "amber", Info: "blue" };
-
   return (
     <div style={s.page}>
       <Toast message={toast} />

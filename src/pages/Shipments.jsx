@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { shipments } from "../data/staticData";
-import { StatCard, Panel, StatusBadge, Toast, Btn } from "../components/UI";
+import { StatCard, StatusBadge, Toast } from "../components/UI";
 
 const steps = ["Order", "Preparing", "Shipped", "In Transit", "Delivered"];
 
