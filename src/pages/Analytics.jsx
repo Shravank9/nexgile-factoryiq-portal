@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { kpis, programs, workOrders } from "../data/staticData";
-import { StatCard, Panel, Toast, Btn } from "../components/UI";
+import { StatCard, Panel, Toast } from "../components/UI";
 
 const BarChart = ({ data, color, height = 100 }) => {
   const max = Math.max(...data.map(d => d.value));

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { rmaRecords } from "../data/staticData";
-import { StatCard, Panel, Table, Td, StatusBadge, Toast, Modal, Input, Select, Btn } from "../components/UI";
+import { StatCard, Panel, Table, Td, StatusBadge, Toast, Modal, Input, Btn } from "../components/UI";
 
 const AfterSales = () => {
   const [rmas, setRmas] = useState(rmaRecords);
