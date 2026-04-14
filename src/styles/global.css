@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #F4F6FB;
+  --surface: #FFFFFF;
+  --surface2: #F8FAFF;
+  --border: #E4E9F4;
+  --border2: #D0D9EE;
+
+  --text-primary: #0F1733;
+  --text-secondary: #4A5578;
+  --text-muted: #8C97B8;
+
+  --blue: #2563EB;
+  --blue-light: #EEF3FF;
+  --blue-mid: #BFCFFE;
+
+  --green: #059669;
+  --green-light: #ECFDF5;
+  --green-mid: #6EE7B7;
+
+  --amber: #D97706;
+  --amber-light: #FFFBEB;
+  --amber-mid: #FCD34D;
+
+  --red: #DC2626;
+  --red-light: #FEF2F2;
+  --red-mid: #FCA5A5;
+
+  --purple: #7C3AED;
+  --purple-light: #F5F3FF;
+
+  --shadow-sm: 0 1px 3px rgba(15,23,51,0.06), 0 1px 2px rgba(15,23,51,0.04);
+  --shadow-md: 0 4px 12px rgba(15,23,51,0.08), 0 2px 4px rgba(15,23,51,0.04);
+  --shadow-lg: 0 12px 32px rgba(15,23,51,0.12), 0 4px 8px rgba(15,23,51,0.06);
+  --shadow-xl: 0 24px 48px rgba(15,23,51,0.16), 0 8px 16px rgba(15,23,51,0.08);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  --font: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+input, select, textarea, button {
+  font-family: var(--font);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--blue) !important;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.fade-in { animation: fadeIn 0.3s ease both; }
+.slide-in { animation: slideIn 0.25s ease both; }
+
+/* Table hover */
+tbody tr:hover { background: var(--surface2) !important; }
+
+/* Button base */
+button { cursor: pointer; }
+button:active { transform: scale(0.98); }
